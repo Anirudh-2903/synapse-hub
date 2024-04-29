@@ -6,13 +6,24 @@ import { Category } from '../../../../payload/payload-types';
 import classes from './index.module.scss';
 import { Checkbox } from '../../../_components/Checkbox';
 import { HR } from '../../../_components/HR';
+import { RadioButton } from '../../../_components/RadioButton';
 
 
 const Filters = ({categories}: {categories: Category[]}) => {
 
   const { categoryFilters , sort , setSort ,  setCategoryFilters } = useFilter();
+
   const handleCategories = (categoryId: string) => {
+    if (categoryFilters.includes(categoryId)) {
+      const updatedFilters = categoryFilters.filter((id) => id !== categoryId);
+      setCategoryFilters(updatedFilters);
+    } else {
+      setCategoryFilters([...categoryFilters, categoryId]);
+    }
   }
+
+  const handleSort = (value: string) => setSort(value);
+
   return (
     <div className={classes.filters}>
         <div>
@@ -31,7 +42,22 @@ const Filters = ({categories}: {categories: Category[]}) => {
                 )
             })}
          </div>
-         <HR />
+         <HR className={classes.hr} />
+         <h6 className={classes.title}>Sort By</h6>
+         <div className={classes.categories}>
+            <RadioButton
+                label='Latest'
+                value='-createdAt'
+                isSelected={sort === '-createdAt'}
+                onRadioChange={handleSort}
+                groupName='sort'/>
+            <RadioButton
+                label='Oldest'
+                value='createdAt'
+                isSelected={sort === 'createdAt'}
+                onRadioChange={handleSort}
+                groupName='sort'/>
+         </div>
         </div>
     </div>
   )
