@@ -1,7 +1,7 @@
 <div align="center">
   <br />
     <a  >
-      <img src="https://github.com/Anirudh-2903/synapse-hub/public/assets/images/homepage.png" alt="Project Banner">
+      <img src="https://github.com/Anirudh-2903/synapse-hub/blob/main/homepage.png" alt="Project Banner">
     </a>
   <br />
 
