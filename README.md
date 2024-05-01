@@ -1,5 +1,20 @@
-# Synapse Hub - A Full Stack Ecommerce App with Payload CMS
+<div align="center">
+  <br />
+    <a  >
+      <img src="https://github.com/Anirudh-2903/synapse-hub/public/assets/images/homepage.png" alt="Project Banner">
+    </a>
+  <br />
 
+  <div>
+    <img src="https://img.shields.io/badge/-Next_JS_14-black?style=for-the-badge&logoColor=white&logo=nextdotjs&color=000000" alt="Next.js" />
+    <img src="https://img.shields.io/badge/-TypeScript-black?style=for-the-badge&logoColor=white&logo=typescript&color=3178C6" alt="TypeScript" />
+    <img src="https://img.shields.io/badge/-Payload_CMS-black?style=for-the-badge&link=https%3A%2F%2Fpayloadcms.com%2F" alt="Payload_CMS" />
+    <img src="https://img.shields.io/badge/-Stripe-black?style=for-the-badge&logoColor=white&logo=stripe&color=008CDD" alt="stripe" />
+  </div>
+
+  <h3 align="center">Synapse Hub - A Full Stack Ecommerce App with Payload CMS</h3>
+
+</div>
 ## Features
 
 - **Product Management**: Easily add, edit, and remove products using the Payload CMS admin interface.
@@ -32,28 +47,28 @@
       PORT=3000
 
     # Database connection string
-DATABASE_URI=your_mongodb_uri
+    DATABASE_URI=your_mongodb_uri
 
-  # Used to encrypt JWT tokens
-PAYLOAD_SECRET=ad_custom_secret
+    # Used to encrypt JWT tokens
+    PAYLOAD_SECRET=ad_custom_secret
 
-  # Used to format links and URLs
-PAYLOAD_PUBLIC_SERVER_URL=http://localhost:3000
-NEXT_PUBLIC_SERVER_URL=http://localhost:3000
+    # Used to format links and URLs
+    PAYLOAD_PUBLIC_SERVER_URL=http://localhost:3000
+    NEXT_PUBLIC_SERVER_URL=http://localhost:3000
 
-  # Enable Stripe integration
-STRIPE_SECRET_KEY=your_stripe_key
-PAYLOAD_PUBLIC_STRIPE_IS_TEST_KEY=true
-NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY=your_stripe_key
+    # Enable Stripe integration
+    STRIPE_SECRET_KEY=your_stripe_key
+    PAYLOAD_PUBLIC_STRIPE_IS_TEST_KEY=true
+    NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY=your_stripe_key
 
 
-  # Used to preview drafts
-PAYLOAD_PUBLIC_DRAFT_SECRET=demo-draft-secret
-NEXT_PRIVATE_DRAFT_SECRET=demo-draft-secret
+    # Used to preview drafts
+    PAYLOAD_PUBLIC_DRAFT_SECRET=demo-draft-secret
+    NEXT_PRIVATE_DRAFT_SECRET=demo-draft-secret
 
-  # Used to revalidate static pages
-  REVALIDATION_KEY=demo-revalation-key
-  NEXT_PRIVATE_REVALIDATION_KEY=demo-revalation-key
+    # Used to revalidate static pages
+    REVALIDATION_KEY=demo-revalation-key
+    NEXT_PRIVATE_REVALIDATION_KEY=demo-revalation-key
    ```
 
 4. Start the development server:
