@@ -35,7 +35,6 @@ export async function fetchHeader(): Promise<Header> {
     headers: {
       'Content-Type': 'application/json',
     },
-    cache: 'no-store',
     body: JSON.stringify({
       query: HEADER_QUERY,
     }),

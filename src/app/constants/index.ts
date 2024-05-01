@@ -1,7 +1,7 @@
 export const inclusions = [
     {
       title: 'Free Shipping',
-      description: 'Free shipping for order above ₹10,000',
+      description: 'Free shipping for order above ₹5,000',
       icon: '/assets/icons/shipping.svg',
     },
     {
