@@ -82,7 +82,7 @@ Welcome to our Payload CMS eCommerce App, where managing your online store is a 
 
    Create a `.env` file in the root directory and add the following:
 
-   ```bash
+   ```env
    # Run on a specific port
       PORT=3000
 
@@ -110,6 +110,8 @@ Welcome to our Payload CMS eCommerce App, where managing your online store is a 
     REVALIDATION_KEY=demo-revalation-key
     NEXT_PRIVATE_REVALIDATION_KEY=demo-revalation-key
    ```
+   Replace the placeholder values with your actual credentials
+
 
 4. Start the development server:
 
