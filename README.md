@@ -96,14 +96,18 @@
 4. User Authentication:
 
     Registration: Users can create an account by providing their email address and password.
+
     Login: Registered users can log in using their email address and password.
+
     Profile Management: Users can manage their profile information, including updating their email address and password.
 
 5. Payment Processing with Stripe:
 
     Secure Payments: Payments are processed securely using Stripe's payment gateway.
+
     Card Payments: Customers can pay using their credit or debit card information.
-                  (Use Stripe Test Card 4000 0035 6000 0008 for test payment)
+    (Use Stripe Test Card 4000 0035 6000 0008 for test payment)
+    
     Payment Confirmation: Customers receive a confirmation email upon successful payment.
 
 ## Contributing
