@@ -1,6 +1,4 @@
-# Ecommerce App with Payload CMS
-
-This is a sample ecommerce application built using Payload CMS. It showcases how Payload can be used to create a powerful and flexible ecommerce platform.
+# Synapse Hub - A Full Stack Ecommerce App with Payload CMS
 
 ## Features
 
@@ -29,33 +27,33 @@ This is a sample ecommerce application built using Payload CMS. It showcases how
 
    Create a `.env` file in the root directory and add the following:
 
-   ```plaintext
+   ```bash
    # Run on a specific port
-PORT=3000
+      PORT=3000
 
-# Database connection string
+    # Database connection string
 DATABASE_URI=your_mongodb_uri
 
-# Used to encrypt JWT tokens
+  # Used to encrypt JWT tokens
 PAYLOAD_SECRET=ad_custom_secret
 
-# Used to format links and URLs
+  # Used to format links and URLs
 PAYLOAD_PUBLIC_SERVER_URL=http://localhost:3000
 NEXT_PUBLIC_SERVER_URL=http://localhost:3000
 
-# Enable Stripe integration
+  # Enable Stripe integration
 STRIPE_SECRET_KEY=your_stripe_key
 PAYLOAD_PUBLIC_STRIPE_IS_TEST_KEY=true
 NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY=your_stripe_key
 
 
-# Used to preview drafts
+  # Used to preview drafts
 PAYLOAD_PUBLIC_DRAFT_SECRET=demo-draft-secret
 NEXT_PRIVATE_DRAFT_SECRET=demo-draft-secret
 
-# Used to revalidate static pages
-REVALIDATION_KEY=demo-revalation-key
-NEXT_PRIVATE_REVALIDATION_KEY=demo-revalation-key
+  # Used to revalidate static pages
+  REVALIDATION_KEY=demo-revalation-key
+  NEXT_PRIVATE_REVALIDATION_KEY=demo-revalation-key
    ```
 
 4. Start the development server:
