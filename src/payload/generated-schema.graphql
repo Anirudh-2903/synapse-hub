@@ -1,33 +1,41 @@
 type Query {
   Page(id: String!, draft: Boolean): Page
   Pages(draft: Boolean, where: Page_where, limit: Int, page: Int, sort: String): Pages
+  countPages(draft: Boolean, where: Page_where): countPages
   docAccessPage(id: String!): pagesDocAccess
   versionPage(id: String): PageVersion
   versionsPages(where: versionsPage_where, limit: Int, page: Int, sort: String): versionsPages
   Product(id: String!, draft: Boolean): Product
   Products(draft: Boolean, where: Product_where, limit: Int, page: Int, sort: String): Products
+  countProducts(draft: Boolean, where: Product_where): countProducts
   docAccessProduct(id: String!): productsDocAccess
   versionProduct(id: String): ProductVersion
   versionsProducts(where: versionsProduct_where, limit: Int, page: Int, sort: String): versionsProducts
   Order(id: String!, draft: Boolean): Order
   Orders(draft: Boolean, where: Order_where, limit: Int, page: Int, sort: String): Orders
+  countOrders(draft: Boolean, where: Order_where): countOrders
   docAccessOrder(id: String!): ordersDocAccess
   Media(id: String!, draft: Boolean): Media
   allMedia(draft: Boolean, where: Media_where, limit: Int, page: Int, sort: String): allMedia
+  countallMedia(draft: Boolean, where: Media_where): countallMedia
   docAccessMedia(id: String!): mediaDocAccess
   Category(id: String!, draft: Boolean): Category
   Categories(draft: Boolean, where: Category_where, limit: Int, page: Int, sort: String): Categories
+  countCategories(draft: Boolean, where: Category_where): countCategories
   docAccessCategory(id: String!): categoriesDocAccess
   User(id: String!, draft: Boolean): User
   Users(draft: Boolean, where: User_where, limit: Int, page: Int, sort: String): Users
+  countUsers(draft: Boolean, where: User_where): countUsers
   docAccessUser(id: String!): usersDocAccess
   meUser: usersMe
   initializedUser: Boolean
   Redirect(id: String!, draft: Boolean): Redirect
   Redirects(draft: Boolean, where: Redirect_where, limit: Int, page: Int, sort: String): Redirects
+  countRedirects(draft: Boolean, where: Redirect_where): countRedirects
   docAccessRedirect(id: String!): redirectsDocAccess
   PayloadPreference(id: String!, draft: Boolean): PayloadPreference
   PayloadPreferences(draft: Boolean, where: PayloadPreference_where, limit: Int, page: Int, sort: String): PayloadPreferences
+  countPayloadPreferences(draft: Boolean, where: PayloadPreference_where): countPayloadPreferences
   docAccessPayloadPreference(id: String!): payload_preferencesDocAccess
   Settings(draft: Boolean): Settings
   docAccessSettings: settingsDocAccess
@@ -1950,6 +1958,10 @@ input Page_where_or {
   OR: [Page_where_or]
 }
 
+type countPages {
+  totalDocs: Int
+}
+
 type pagesDocAccess {
   fields: PagesDocAccessFields
   create: PagesCreateDocAccess
@@ -2435,34 +2447,9 @@ type PagesDocAccessFields_meta_Delete {
 }
 
 type PagesDocAccessFields_meta_Fields {
-  overview: PagesDocAccessFields_meta_overview
   title: PagesDocAccessFields_meta_title
   description: PagesDocAccessFields_meta_description
   image: PagesDocAccessFields_meta_image
-  preview: PagesDocAccessFields_meta_preview
-}
-
-type PagesDocAccessFields_meta_overview {
-  create: PagesDocAccessFields_meta_overview_Create
-  read: PagesDocAccessFields_meta_overview_Read
-  update: PagesDocAccessFields_meta_overview_Update
-  delete: PagesDocAccessFields_meta_overview_Delete
-}
-
-type PagesDocAccessFields_meta_overview_Create {
-  permission: Boolean!
-}
-
-type PagesDocAccessFields_meta_overview_Read {
-  permission: Boolean!
-}
-
-type PagesDocAccessFields_meta_overview_Update {
-  permission: Boolean!
-}
-
-type PagesDocAccessFields_meta_overview_Delete {
-  permission: Boolean!
 }
 
 type PagesDocAccessFields_meta_title {
@@ -2531,29 +2518,6 @@ type PagesDocAccessFields_meta_image_Update {
 }
 
 type PagesDocAccessFields_meta_image_Delete {
-  permission: Boolean!
-}
-
-type PagesDocAccessFields_meta_preview {
-  create: PagesDocAccessFields_meta_preview_Create
-  read: PagesDocAccessFields_meta_preview_Read
-  update: PagesDocAccessFields_meta_preview_Update
-  delete: PagesDocAccessFields_meta_preview_Delete
-}
-
-type PagesDocAccessFields_meta_preview_Create {
-  permission: Boolean!
-}
-
-type PagesDocAccessFields_meta_preview_Read {
-  permission: Boolean!
-}
-
-type PagesDocAccessFields_meta_preview_Update {
-  permission: Boolean!
-}
-
-type PagesDocAccessFields_meta_preview_Delete {
   permission: Boolean!
 }
 
@@ -3811,6 +3775,10 @@ input Product_where_or {
   OR: [Product_where_or]
 }
 
+type countProducts {
+  totalDocs: Int
+}
+
 type productsDocAccess {
   fields: ProductsDocAccessFields
   create: ProductsCreateDocAccess
@@ -4116,34 +4084,9 @@ type ProductsDocAccessFields_meta_Delete {
 }
 
 type ProductsDocAccessFields_meta_Fields {
-  overview: ProductsDocAccessFields_meta_overview
   title: ProductsDocAccessFields_meta_title
   description: ProductsDocAccessFields_meta_description
   image: ProductsDocAccessFields_meta_image
-  preview: ProductsDocAccessFields_meta_preview
-}
-
-type ProductsDocAccessFields_meta_overview {
-  create: ProductsDocAccessFields_meta_overview_Create
-  read: ProductsDocAccessFields_meta_overview_Read
-  update: ProductsDocAccessFields_meta_overview_Update
-  delete: ProductsDocAccessFields_meta_overview_Delete
-}
-
-type ProductsDocAccessFields_meta_overview_Create {
-  permission: Boolean!
-}
-
-type ProductsDocAccessFields_meta_overview_Read {
-  permission: Boolean!
-}
-
-type ProductsDocAccessFields_meta_overview_Update {
-  permission: Boolean!
-}
-
-type ProductsDocAccessFields_meta_overview_Delete {
-  permission: Boolean!
 }
 
 type ProductsDocAccessFields_meta_title {
@@ -4212,29 +4155,6 @@ type ProductsDocAccessFields_meta_image_Update {
 }
 
 type ProductsDocAccessFields_meta_image_Delete {
-  permission: Boolean!
-}
-
-type ProductsDocAccessFields_meta_preview {
-  create: ProductsDocAccessFields_meta_preview_Create
-  read: ProductsDocAccessFields_meta_preview_Read
-  update: ProductsDocAccessFields_meta_preview_Update
-  delete: ProductsDocAccessFields_meta_preview_Delete
-}
-
-type ProductsDocAccessFields_meta_preview_Create {
-  permission: Boolean!
-}
-
-type ProductsDocAccessFields_meta_preview_Read {
-  permission: Boolean!
-}
-
-type ProductsDocAccessFields_meta_preview_Update {
-  permission: Boolean!
-}
-
-type ProductsDocAccessFields_meta_preview_Delete {
   permission: Boolean!
 }
 
@@ -5032,6 +4952,10 @@ input Order_where_or {
   OR: [Order_where_or]
 }
 
+type countOrders {
+  totalDocs: Int
+}
+
 type ordersDocAccess {
   fields: OrdersDocAccessFields
   create: OrdersCreateDocAccess
@@ -5483,6 +5407,10 @@ input Media_where_or {
   OR: [Media_where_or]
 }
 
+type countallMedia {
+  totalDocs: Int
+}
+
 type mediaDocAccess {
   fields: MediaDocAccessFields
   create: MediaCreateDocAccess
@@ -5911,6 +5839,10 @@ input Category_where_or {
   id: Category_id_operator
   AND: [Category_where_and]
   OR: [Category_where_or]
+}
+
+type countCategories {
+  totalDocs: Int
 }
 
 type categoriesDocAccess {
@@ -6375,6 +6307,10 @@ input User_where_or {
   id: User_id_operator
   AND: [User_where_and]
   OR: [User_where_or]
+}
+
+type countUsers {
+  totalDocs: Int
 }
 
 type usersDocAccess {
@@ -6922,6 +6858,10 @@ input Redirect_where_or {
   OR: [Redirect_where_or]
 }
 
+type countRedirects {
+  totalDocs: Int
+}
+
 type redirectsDocAccess {
   fields: RedirectsDocAccessFields
   create: RedirectsCreateDocAccess
@@ -7253,6 +7193,10 @@ input PayloadPreference_where_or {
   id: PayloadPreference_id_operator
   AND: [PayloadPreference_where_and]
   OR: [PayloadPreference_where_or]
+}
+
+type countPayloadPreferences {
+  totalDocs: Int
 }
 
 type payload_preferencesDocAccess {
@@ -9006,34 +8950,9 @@ type PagesFields_meta_Delete {
 }
 
 type PagesFields_meta_Fields {
-  overview: PagesFields_meta_overview
   title: PagesFields_meta_title
   description: PagesFields_meta_description
   image: PagesFields_meta_image
-  preview: PagesFields_meta_preview
-}
-
-type PagesFields_meta_overview {
-  create: PagesFields_meta_overview_Create
-  read: PagesFields_meta_overview_Read
-  update: PagesFields_meta_overview_Update
-  delete: PagesFields_meta_overview_Delete
-}
-
-type PagesFields_meta_overview_Create {
-  permission: Boolean!
-}
-
-type PagesFields_meta_overview_Read {
-  permission: Boolean!
-}
-
-type PagesFields_meta_overview_Update {
-  permission: Boolean!
-}
-
-type PagesFields_meta_overview_Delete {
-  permission: Boolean!
 }
 
 type PagesFields_meta_title {
@@ -9102,29 +9021,6 @@ type PagesFields_meta_image_Update {
 }
 
 type PagesFields_meta_image_Delete {
-  permission: Boolean!
-}
-
-type PagesFields_meta_preview {
-  create: PagesFields_meta_preview_Create
-  read: PagesFields_meta_preview_Read
-  update: PagesFields_meta_preview_Update
-  delete: PagesFields_meta_preview_Delete
-}
-
-type PagesFields_meta_preview_Create {
-  permission: Boolean!
-}
-
-type PagesFields_meta_preview_Read {
-  permission: Boolean!
-}
-
-type PagesFields_meta_preview_Update {
-  permission: Boolean!
-}
-
-type PagesFields_meta_preview_Delete {
   permission: Boolean!
 }
 
@@ -9527,34 +9423,9 @@ type ProductsFields_meta_Delete {
 }
 
 type ProductsFields_meta_Fields {
-  overview: ProductsFields_meta_overview
   title: ProductsFields_meta_title
   description: ProductsFields_meta_description
   image: ProductsFields_meta_image
-  preview: ProductsFields_meta_preview
-}
-
-type ProductsFields_meta_overview {
-  create: ProductsFields_meta_overview_Create
-  read: ProductsFields_meta_overview_Read
-  update: ProductsFields_meta_overview_Update
-  delete: ProductsFields_meta_overview_Delete
-}
-
-type ProductsFields_meta_overview_Create {
-  permission: Boolean!
-}
-
-type ProductsFields_meta_overview_Read {
-  permission: Boolean!
-}
-
-type ProductsFields_meta_overview_Update {
-  permission: Boolean!
-}
-
-type ProductsFields_meta_overview_Delete {
-  permission: Boolean!
 }
 
 type ProductsFields_meta_title {
@@ -9623,29 +9494,6 @@ type ProductsFields_meta_image_Update {
 }
 
 type ProductsFields_meta_image_Delete {
-  permission: Boolean!
-}
-
-type ProductsFields_meta_preview {
-  create: ProductsFields_meta_preview_Create
-  read: ProductsFields_meta_preview_Read
-  update: ProductsFields_meta_preview_Update
-  delete: ProductsFields_meta_preview_Delete
-}
-
-type ProductsFields_meta_preview_Create {
-  permission: Boolean!
-}
-
-type ProductsFields_meta_preview_Read {
-  permission: Boolean!
-}
-
-type ProductsFields_meta_preview_Update {
-  permission: Boolean!
-}
-
-type ProductsFields_meta_preview_Delete {
   permission: Boolean!
 }
 
