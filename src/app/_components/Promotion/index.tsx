@@ -2,8 +2,17 @@
 
 import React, { useEffect, useState } from 'react'
 import classes from './index.module.scss';
+import Image from 'next/image';
+import Link from 'next/link';
+import { useFilter } from '../../_providers/Filter';
+import { Category } from '../../../payload/payload-types';
 
-const Promotion = () => {
+type CategoryCardProps = {
+    category: Category
+};
+
+
+const Promotion = ({category}: CategoryCardProps) => {
 
     const [time, setTime] = useState({
         days: 0,
@@ -11,6 +20,9 @@ const Promotion = () => {
         minutes: 0,
         seconds: 0,
     });
+
+    const {setCategoryFilters} = useFilter();
+    const id="662dfcdb99f69288850b86c3";
 
     const targetDate = new Date();
     targetDate.setDate(targetDate.getDate() + 7);
@@ -50,6 +62,9 @@ const Promotion = () => {
                     <StatBox label="Seconds" value={time.seconds} />
                 </ul>
             </div>
+            <Link href="/products" onClick={() => setCategoryFilters([id])}>
+            <Image src="/assets/images/image-4.png" alt="Promotion" width={700} height={700}/>
+            </Link>
         </section>
     )
 }
