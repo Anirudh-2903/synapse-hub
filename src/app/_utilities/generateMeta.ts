@@ -13,8 +13,8 @@ export const generateMeta = async (args: { doc: Page | Product }): Promise<Metad
     `${process.env.NEXT_PUBLIC_SERVER_URL}${doc.meta.image.url}`
 
   return {
-    title: doc?.meta?.title || 'Payload',
-    description: doc?.meta?.description,
+    title: 'Synapse Hub',
+    description: 'A Full Stack Ecommerce App built with Payload and Next.js.',
     openGraph: mergeOpenGraph({
       title: doc?.meta?.title || 'Payload',
       description: doc?.meta?.description,
