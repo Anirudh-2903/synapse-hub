@@ -23,9 +23,6 @@
 3. [Features](#features)
 4. [Quick Start](#quick-start)
 5. [Usage](#usage)
-6. [Contributing](#contributing)
-7. [License](#license)
-
 
 ## <a name="introduction">Introduction</a>
 Welcome to our Payload CMS eCommerce App, where managing your online store is a breeze. With a user-friendly admin interface powered by Payload CMS, you can easily add, edit, and remove products, keeping your inventory up-to-date effortlessly. Track orders and manage their status through the intuitive dashboard, ensuring smooth operations. User authentication allows customers to create accounts, log in, and manage their profile information securely. The shopping cart feature enables seamless shopping experiences, while Stripe integration ensures secure payment processing. Designed with a responsive layout, our app delivers a consistent and enjoyable shopping experience across all devices.
@@ -70,6 +67,7 @@ Welcome to our Payload CMS eCommerce App, where managing your online store is a 
 
    ```bash
    git clone https://github.com/Anirudh-2903/synapse-hub.git
+   cd synapse-hub
    ```
 
 2. Install dependencies:
@@ -84,7 +82,7 @@ Welcome to our Payload CMS eCommerce App, where managing your online store is a 
 
    ```env
    # Run on a specific port
-      PORT=3000
+    PORT=3000
 
     # Database connection string
     DATABASE_URI=your_mongodb_uri
@@ -148,12 +146,16 @@ Welcome to our Payload CMS eCommerce App, where managing your online store is a 
     Secure Payments: Payments are processed securely using Stripe's payment gateway.
 
     Card Payments: Customers can pay using their credit or debit card information.
-    (Use Stripe Test Card 4000 0035 6000 0008 for test payment)
     
-## <a name="contributing">Contributing</a>
+6. Making Mock Payments:
+   
+   Use the following card for any mock payments:
 
-Contributions are welcome! If you'd like to contribute to this project, please fork the repository and create a pull request.
+   ```bash
+   4000 0035 6000 0008
+   ```
+   
+   **For Expiry Date :** Give a future date
 
-## <a name="license">License</a>
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+   **For CVV :** Give a random 3-digit number
+   
