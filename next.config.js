@@ -1,7 +1,6 @@
 /** @type {import('next').NextConfig} */
 const { types } = require('util')
 const ContentSecurityPolicy = require('./csp')
-const redirects = require('./redirects')
 
 const nextConfig = {
   typescript: {
@@ -14,7 +13,6 @@ const nextConfig = {
       .filter(Boolean)
       .map(url => url.replace(/https?:\/\//, '')),
   },
-  redirects,
   async headers() {
     const headers = []
 

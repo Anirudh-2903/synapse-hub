@@ -30,7 +30,7 @@ import { priceUpdated } from './stripe/webhooks/priceUpdated'
 import { productUpdated } from './stripe/webhooks/productUpdated'
 
 const generateTitle: GenerateTitle = () => {
-  return 'My Store'
+  return 'Synapse Hub'
 }
 
 const mockModulePath = path.resolve(__dirname, './emptyModuleMock.js')
@@ -113,11 +113,6 @@ export default buildConfig({
     },
     // The seed endpoint is used to populate the database with some example data
     // You should delete this endpoint before deploying your site to production
-    {
-      path: '/seed',
-      method: 'get',
-      handler: seed,
-    },
   ],
   plugins: [
     stripePlugin({
