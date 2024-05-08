@@ -12,9 +12,6 @@ import Link from 'next/link'
 import Image from 'next/image'
 
 export default async function Login() {
-  await getMeUser({
-    validUserRedirect: `/account?warning=${encodeURIComponent('You are already logged in.')}`,
-  })
 
   return (
     <section className={classes.login}>
