@@ -144,4 +144,21 @@ export default buildConfig({
     }),
     payloadCloud(),
   ],
+
+  async onInit(payload) {
+    const existingUsers = await payload.find({
+      collection: 'users',
+      limit: 1,
+    })
+
+    if (existingUsers.docs.length === 0) {
+      await payload.create({
+        collection: 'users',
+        data: {
+          email: 'anirudhdas898@gmail.com',
+          password: 'test',
+        },
+      })
+    }
+  },
 })
