@@ -25,7 +25,7 @@
 5. [Usage](#usage)
 
 ## <a name="introduction">Introduction</a>
-Welcome to our Payload CMS eCommerce App, where managing your online store is a breeze. With a user-friendly admin interface powered by Payload CMS, you can easily add, edit, and remove products, keeping your inventory up-to-date effortlessly. Track orders and manage their status through the intuitive dashboard, ensuring smooth operations. User authentication allows customers to create accounts, log in, and manage their profile information securely. The shopping cart feature enables seamless shopping experiences, while Stripe integration ensures secure payment processing. Designed with a responsive layout, our app delivers a consistent and enjoyable shopping experience across all devices.
+Welcome to Synapse Hub, an e-commerce application along with a user-friendly admin interface powered by Payload CMS, where you can easily add, edit, and remove products, keeping your inventory up-to-date effortlessly. Track orders and manage their status through the intuitive dashboard, ensuring smooth operations. User authentication allows customers to create accounts, log in, and manage their profile information securely. The shopping cart feature enables seamless shopping experiences, while Stripe integration ensures secure payment processing. Designed with a responsive layout, our app delivers a consistent and enjoyable shopping experience across all devices.
 
 
 ## <a name="tech-stack">Tech Stack</a>
