@@ -14,6 +14,7 @@ RUN yarn build
 
 ENV NODE_ENV=production
 ENV PAYLOAD_CONFIG_PATH=dist/payload.config.js
+ENV PAYLOAD_SECRET=ULAFM2FEu9XpaCHwXQ8xt79GzvI0Rt3zjniwI
 
 EXPOSE 3000
 CMD [ "yarn", "run", "serve" ]
