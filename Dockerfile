@@ -8,10 +8,8 @@ COPY yarn.lock .
 
 RUN apk add git
 
-RUN yarn install
-
 COPY . .
-
+RUN yarn install
 RUN yarn build
 
 EXPOSE 3000
