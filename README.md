@@ -1,8 +1,6 @@
 <div align="center">
   <br />
-    <a  >
-      <img src="https://github.com/Anirudh-2903/synapse-hub/blob/main/homepage.png" alt="Project Banner">
-    </a>
+      <img src="https://github.com/Anirudh-2903/Project-Images/blob/master/Synapse%20Hub/homepage.png" alt="Project Banner">
   <br />
 
   <div>
@@ -25,6 +23,22 @@
 5. [Usage](#usage)
 
 ## <a name="introduction">Introduction</a>
+
+<div align="center">
+  <br />
+      <img src="https://github.com/Anirudh-2903/Project-Images/blob/master/Synapse%20Hub/homepage.png" alt="homepage">
+  <br />
+  <br />
+      <img src="https://github.com/Anirudh-2903/Project-Images/blob/master/Synapse%20Hub/categories.png" alt="categories">
+  <br />
+  <br />
+      <img src="https://github.com/Anirudh-2903/Project-Images/blob/master/Synapse%20Hub/deals.png" alt="deals">
+  <br />
+  <br />
+      <img src="https://github.com/Anirudh-2903/Project-Images/blob/master/Synapse%20Hub/footer.png" alt="footer">
+  <br />
+</div>
+    
 Welcome to Synapse Hub, an e-commerce application along with a user-friendly admin interface powered by Payload CMS, where you can easily add, edit, and remove products, keeping your inventory up-to-date effortlessly. Track orders and manage their status through the intuitive dashboard, ensuring smooth operations. User authentication allows customers to create accounts, log in, and manage their profile information securely. The shopping cart feature enables seamless shopping experiences, while Stripe integration ensures secure payment processing. Designed with a responsive layout, our app delivers a consistent and enjoyable shopping experience across all devices.
 
 
@@ -43,13 +57,70 @@ Welcome to Synapse Hub, an e-commerce application along with a user-friendly adm
 
 - **Effortless Product Management**: Easily add, edit, and remove products using the intuitive Payload CMS admin interface. Update product details, images, and availability with just a few clicks.
 
+<div align="center">
+  <br />
+      <img src="https://github.com/Anirudh-2903/Project-Images/blob/master/Synapse%20Hub/admin.png" alt="admin">
+  <br />
+  <br />
+      <img src="https://github.com/Anirudh-2903/Project-Images/blob/master/Synapse%20Hub/add_product.png" alt="add_product">
+  <br />
+</div>
+
 - **Streamlined Order Management**: Efficiently manage orders and track their status through the admin dashboard. Keep customers informed about their order progress from purchase to delivery.
+
+<div align="center">
+  <br />
+      <img src="https://github.com/Anirudh-2903/Project-Images/blob/master/Synapse%20Hub/admin_orders.png" alt="admin_orders">
+  <br />
+</div>
 
 - **Robust User Authentication**: Enable users to create accounts, log in securely, and manage their profile information. Ensure a personalized shopping experience and easy order tracking for registered users.
 
+<div align="center">
+  <br />
+      <img src="https://github.com/Anirudh-2903/Project-Images/blob/master/Synapse%20Hub/signup.png" alt="signup">
+  <br />
+  <br />
+      <img src="https://github.com/Anirudh-2903/Project-Images/blob/master/Synapse%20Hub/login.png" alt="login">
+  <br />
+  <br />
+      <img src="https://github.com/Anirudh-2903/Project-Images/blob/master/Synapse%20Hub/forgotpw.png" alt="forgotpw">
+  <br />
+  <br />
+      <img src="https://github.com/Anirudh-2903/Project-Images/blob/master/Synapse%20Hub/profile.png" alt="profile">
+  <br />
+  <br />
+      <img src="https://github.com/Anirudh-2903/Project-Images/blob/master/Synapse%20Hub/purchases.png" alt="purchases">
+  <br />
+  <br />
+      <img src="https://github.com/Anirudh-2903/Project-Images/blob/master/Synapse%20Hub/orders.png" alt="orders">
+  <br />
+</div>
+
 - **Seamless Shopping Cart Experience**: Allow users to add products to their cart and seamlessly proceed to checkout. Enhance user satisfaction with a smooth and hassle-free shopping experience.
 
+<div align="center">
+  <br />
+      <img src="https://github.com/Anirudh-2903/Project-Images/blob/master/Synapse%20Hub/products.png" alt="products">
+  <br />
+  <br />
+      <img src="https://github.com/Anirudh-2903/Project-Images/blob/master/Synapse%20Hub/filter.png" alt="filter">
+  <br />
+  <br />
+      <img src="https://github.com/Anirudh-2903/Project-Images/blob/master/Synapse%20Hub/product_details.png" alt="product_details">
+  <br />
+  <br />
+      <img src="https://github.com/Anirudh-2903/Project-Images/blob/master/Synapse%20Hub/cart.png" alt="cart">
+  <br />
+</div>
+
 - **Secure Payment Processing**: Ensure secure payment processing using the integrated Stripe payment gateway. Provide users with a safe and reliable payment experience for their purchases.
+
+<div align="center">
+  <br />
+      <img src="https://github.com/Anirudh-2903/Project-Images/blob/master/Synapse%20Hub/checkout.png" alt="checkout">
+  <br />
+</div>
 
 - **Responsive Design for All Devices**: Deliver a consistent user experience across all devices with a responsive design. Whether users access your store on desktop or mobile, they'll enjoy a seamless browsing and shopping experience.
 
